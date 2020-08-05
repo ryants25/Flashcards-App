@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayFlashcard" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextQuestion"
+            android:layout_alignParentLeft="true"
+            android:text="Question: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextQuestion"
+            android:layout_width="296dp"
+            android:layout_height="59dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="91dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"></EditText>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextAnswer"
+            android:layout_alignParentLeft="true"
+            android:text="Answer: "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextAnswer"
+            android:layout_width="295dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/editTextQuestion"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_marginLeft="91dp"
+            android:layout_marginTop="166dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextAnswer"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="0dp"
+            android:onClick="run"
+            android:text="SAVE" />
+
+    </RelativeLayout>
+</ScrollView>
